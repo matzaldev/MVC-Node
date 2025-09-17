@@ -9,4 +9,6 @@ const loginController = require('../controller/LoginController')
 
 router.get("/login",loginController.getLogin);
 
+router.get("/logged",loginController.getIsLogged);
+
 module.exports = router

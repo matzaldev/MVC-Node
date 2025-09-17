@@ -4,6 +4,10 @@ const app = express()
 const loginRoutes = require('./routes/loginRoutes')
 
 app.use(loginRoutes)
+
+app.set('view engine', 'ejs');
+app.set('view', '/view');
+
 app.listen(3000, function(){
     console.log('APP rodando na porta 3000')
 });
